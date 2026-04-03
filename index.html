@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SGI Ritual Nutrition | Feeding the Temple Through Conscious Alignment</title>
+  <meta name="description" content="SwamiG Institute module on ritual nutrition based on SGI Principles: Auset, Sekert, Tehuti, the 2 SGI Principles, and the 5 Possibilities." />
+  <meta name="theme-color" content="#0b0b12" />
+  <style>
+    :root{
+      --bg:#07070b;
+      --bg2:#10101a;
+      --panel:#12121d;
+      --panel2:#171726;
+      --text:#f5f1df;
+      --muted:#cfc7a7;
+      --gold:#d4af37;
+      --gold2:#f2d675;
+      --purple:#6d3df5;
+      --purple2:#9c7bff;
+      --line:rgba(212,175,55,.22);
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+      --radius:22px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(109,61,245,.20), transparent 26%),
+        radial-gradient(circle at top left, rgba(212,175,55,.12), transparent 24%),
+        linear-gradient(180deg, #090910 0%, #0c0c14 45%, #08080d 100%);
+      line-height:1.6;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max), calc(100% - 28px)); margin:0 auto}
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(10px);
+      background:rgba(8,8,14,.78);
+      border-bottom:1px solid rgba(212,175,55,.16);
+    }
+
+    .topbar-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+
+    .brand img{
+      width:58px;
+      height:58px;
+      object-fit:contain;
+      border-radius:14px;
+      background:rgba(255,255,255,.03);
+      box-shadow:0 0 0 1px rgba(212,175,55,.18), 0 0 22px rgba(109,61,245,.22);
+    }
+
+    .brand-text{
+      min-width:0;
+    }
+
+    .eyebrow{
+      color:var(--gold2);
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      font-size:.72rem;
+    }
+
+    .brand h1{
+      margin:2px 0 0;
+      font-size:1.02rem;
+      line-height:1.2;
+      color:#fff8df;
+      font-weight:700;
+    }
+
+    .pills{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      gap:8px;
+    }
+
+    .pill{
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:.84rem;
+      background:linear-gradient(180deg, rgba(109,61,245,.16), rgba(212,175,55,.08));
+      border:1px solid rgba(212,175,55,.22);
+      color:#f7eed0;
+      box-shadow:0 0 0 1px rgba(255,255,255,.02) inset, 0 0 18px rgba(109,61,245,.12);
+      transition:.2s ease;
+      white-space:nowrap;
+    }
+
+    .pill:hover{
+      transform:translateY(-2px);
+      box-shadow:0 0 0 1px rgba(255,255,255,.02) inset, 0 10px 22px rgba(0,0,0,.32), 0 0 18px rgba(212,175,55,.16);
+    }
+
+    .hero{
+      padding:52px 0 26px;
+    }
+
+    .hero-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:30px;
+      background:
+        linear-gradient(135deg, rgba(109,61,245,.16), rgba(212,175,55,.08)),
+        linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid rgba(212,175,55,.18);
+      box-shadow:var(--shadow);
+      padding:34px 24px 28px;
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:auto -80px -80px auto;
+      width:220px;
+      height:220px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(212,175,55,.22), transparent 62%);
+      pointer-events:none;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.5fr .9fr;
+      gap:24px;
+      align-items:center;
+    }
+
+    .hero h2{
+      margin:0 0 10px;
+      font-size:clamp(2rem, 4vw, 3.6rem);
+      line-height:1.05;
+      color:#fff6d7;
+    }
+
+    .hero h2 span{
+      color:var(--gold2);
+      text-shadow:0 0 20px rgba(212,175,55,.18);
+    }
+
+    .hero p{
+      margin:0 0 14px;
+      color:#e8dfbf;
+      font-size:1.03rem;
+      max-width:760px;
+    }
+
+    .quote{
+      margin-top:16px;
+      padding:16px 18px;
+      border-left:4px solid var(--gold);
+      background:rgba(255,255,255,.03);
+      border-radius:16px;
+      color:#fff3c4;
+      font-style:italic;
+    }
+
+    .hero-side{
+      display:grid;
+      gap:14px;
+    }
+
+    .mini-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+      border:1px solid rgba(212,175,55,.14);
+      border-radius:20px;
+      padding:16px;
+    }
+
+    .mini-card h3{
+      margin:0 0 6px;
+      font-size:1rem;
+      color:#fff1bd;
+    }
+
+    .mini-card p{
+      margin:0;
+      font-size:.95rem;
+      color:#ddd3af;
+    }
+
+    .cta-row{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:999px;
+      font-weight:700;
+      border:1px solid rgba(212,175,55,.24);
+      transition:.2s ease;
+    }
+
+    .btn-primary{
+      background:linear-gradient(180deg, rgba(212,175,55,.18), rgba(109,61,245,.16));
+      color:#fff7d8;
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.03);
+      color:#e9dfbc;
+    }
+
+    .btn:hover{transform:translateY(-2px)}
+
+    .section{
+      padding:20px 0;
+    }
+
+    .section-title{
+      display:flex;
+      align-items:end;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:16px;
+    }
+
+    .section-title h3{
+      margin:0;
+      font-size:1.55rem;
+      color:#fff3cb;
+    }
+
+    .section-title .sub{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.014));
+      border:1px solid rgba(212,175,55,.16);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow);
+    }
+
+    .card h4{
+      margin:0 0 10px;
+      color:#fff0bb;
+      font-size:1.15rem;
+    }
+
+    .card h5{
+      margin:0 0 8px;
+      color:#f0d56d;
+      font-size:1rem;
+      letter-spacing:.02em;
+    }
+
+    .card p{
+      margin:0 0 12px;
+      color:#ddd3b0;
+    }
+
+    .tag{
+      display:inline-block;
+      margin:0 8px 8px 0;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:.8rem;
+      color:#fff0c7;
+      border:1px solid rgba(212,175,55,.18);
+      background:rgba(109,61,245,.14);
+    }
+
+    ul.clean{
+      margin:8px 0 0 0;
+      padding-left:18px;
+      color:#efe5bf;
+    }
+
+    .law{
+      margin-top:10px;
+      padding:12px 14px;
+      border-radius:16px;
+      background:rgba(212,175,55,.08);
+      border:1px solid rgba(212,175,55,.16);
+      color:#fff3cc;
+    }
+
+    .number-grid{
+      display:grid;
+      grid-template-columns:repeat(5, 1fr);
+      gap:16px;
+    }
+
+    .state{
+      min-height:100%;
+      padding:18px;
+      border-radius:20px;
+      background:linear-gradient(180deg, rgba(109,61,245,.12), rgba(255,255,255,.02));
+      border:1px solid rgba(212,175,55,.16);
+      box-shadow:var(--shadow);
+    }
+
+    .state .num{
+      width:38px;
+      height:38px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      border:1px solid rgba(212,175,55,.26);
+      color:#fff2c5;
+      margin-bottom:12px;
+      background:rgba(0,0,0,.18);
+      font-weight:700;
+    }
+
+    .state h4{
+      margin:0 0 8px;
+      color:#ffe69b;
+      font-size:1rem;
+    }
+
+    .state p{
+      margin:0;
+      color:#ddd3ae;
+      font-size:.95rem;
+    }
+
+    .ritual-flow{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:16px;
+    }
+
+    .flow{
+      position:relative;
+      padding:20px;
+      border-radius:20px;
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.012));
+      border:1px solid rgba(212,175,55,.16);
+      box-shadow:var(--shadow);
+    }
+
+    .flow .step{
+      display:inline-block;
+      margin-bottom:8px;
+      font-size:.78rem;
+      letter-spacing:.14em;
+      color:var(--gold2);
+      text-transform:uppercase;
+    }
+
+    .flow h4{
+      margin:0 0 10px;
+      color:#fff2c6;
+    }
+
+    .check-wrap{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:18px;
+      align-items:start;
+    }
+
+    .checklist{
+      display:grid;
+      gap:12px;
+    }
+
+    .check-item{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding:14px;
+      border-radius:18px;
+      background:rgba(255,255,255,.022);
+      border:1px solid rgba(212,175,55,.12);
+    }
+
+    .check-item input{
+      margin-top:5px;
+      transform:scale(1.2);
+      accent-color:var(--gold);
+    }
+
+    .check-item strong{
+      display:block;
+      color:#fff1c0;
+    }
+
+    .check-item span{
+      color:#d8ceac;
+      font-size:.95rem;
+    }
+
+    .progress-panel{
+      position:sticky;
+      top:86px;
+    }
+
+    .progress-bar{
+      margin:10px 0 16px;
+      height:14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.05);
+      overflow:hidden;
+      border:1px solid rgba(212,175,55,.12);
+    }
+
+    .progress-fill{
+      width:0%;
+      height:100%;
+      background:linear-gradient(90deg, rgba(109,61,245,.9), rgba(212,175,55,.92));
+      transition:width .25s ease;
+    }
+
+    .progress-stats{
+      color:#f4e6b4;
+      font-size:1rem;
+      margin-bottom:14px;
+      font-weight:700;
+    }
+
+    .small{
+      color:#cabf99;
+      font-size:.92rem;
+    }
+
+    .doctrine{
+      text-align:center;
+      padding:24px;
+      border-radius:28px;
+      background:
+        radial-gradient(circle at top, rgba(212,175,55,.12), transparent 50%),
+        linear-gradient(180deg, rgba(109,61,245,.10), rgba(255,255,255,.02));
+      border:1px solid rgba(212,175,55,.16);
+      box-shadow:var(--shadow);
+    }
+
+    .doctrine h3{
+      margin:0 0 10px;
+      color:#fff2c1;
+      font-size:1.65rem;
+    }
+
+    .doctrine p{
+      margin:0 auto 12px;
+      max-width:850px;
+      color:#e3d9b4;
+      font-size:1.02rem;
+    }
+
+    .formula{
+      margin-top:12px;
+      font-size:1.18rem;
+      color:#ffe7a3;
+      font-weight:700;
+    }
+
+    .footer{
+      padding:34px 0 56px;
+      color:#cbbf98;
+    }
+
+    .footer-card{
+      border-radius:24px;
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.012));
+      border:1px solid rgba(212,175,55,.14);
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+
+    .footer-card p{
+      margin:0 0 8px;
+    }
+
+    .muted-center{
+      text-align:center;
+      color:#cdbf95;
+    }
+
+    .divider{
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(212,175,55,.28), transparent);
+      margin:18px 0 2px;
+    }
+
+    @media (max-width: 1040px){
+      .hero-grid,
+      .grid-3,
+      .grid-2,
+      .check-wrap,
+      .ritual-flow{grid-template-columns:1fr}
+      .number-grid{grid-template-columns:repeat(2, 1fr)}
+      .progress-panel{position:static}
+    }
+
+    @media (max-width: 720px){
+      .topbar-inner{flex-direction:column; align-items:flex-start}
+      .pills{justify-content:flex-start}
+      .hero{padding-top:28px}
+      .hero-card{padding:24px 16px}
+      .number-grid{grid-template-columns:1fr}
+      .brand h1{font-size:.95rem}
+      .pill{font-size:.78rem; padding:7px 10px}
+      .section-title{flex-direction:column; align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="https://swamiginstitute.com" target="_blank" rel="noopener">
+        <img src="SwamiG.gif" alt="SwamiG Institute logo" />
+        <div class="brand-text">
+          <div class="eyebrow">SwamiG Institute</div>
+          <h1>SGI Ritual Nutrition Module</h1>
+        </div>
+      </a>
+
+      <nav class="pills" aria-label="SGI portals">
+        <a class="pill" href="https://4cowrieshell.com/index0" target="_blank" rel="noopener">4-Cowrie</a>
+        <a class="pill" href="https://16cowrie.com" target="_blank" rel="noopener">16-Cowrie</a>
+        <a class="pill" href="https://myopele.com" target="_blank" rel="noopener">Opele</a>
+        <a class="pill" href="https://iamiyawo.com" target="_blank" rel="noopener">Iyawo Track</a>
+        <a class="pill" href="https://iamaborisha.com" target="_blank" rel="noopener">Obi Orisha</a>
+        <a class="pill" href="https://swamiginstitute.com" target="_blank" rel="noopener">SGI Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-grid">
+            <div>
+              <div class="eyebrow">Feeding the Temple Through Conscious Alignment</div>
+              <h2>Eating as Ritual <span>Based on SGI Principles</span></h2>
+              <p>
+                This module formalizes eating as a sacred discipline. Within SGI, the body is treated as Temple,
+                food as offering, and consciousness as priest. Proper nutrition is therefore not only about what is consumed,
+                but how it is prepared, invoked, received, and integrated.
+              </p>
+              <div class="quote">
+                “The Body is the Temple. Food is the Offering. The Mind is the Priest.”
+              </div>
+
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#daily-checklist">Start Ritual Checklist</a>
+                <a class="btn btn-secondary" href="#sgi-pillars">Study the SGI Pillars</a>
+              </div>
+            </div>
+
+            <div class="hero-side">
+              <div class="mini-card">
+                <h3>3 Pillars</h3>
+                <p>Auset • Sekert • Tehuti</p>
+              </div>
+              <div class="mini-card">
+                <h3>2 Principles</h3>
+                <p>Extending Royal Legacy • Standing on the Shoulders of Enlightened Ancestors</p>
+              </div>
+              <div class="mini-card">
+                <h3>5 Possibilities</h3>
+                <p>Aláfíà • Ejìfé • Ètàwà • Òkànràn • Òyèkú</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sgi-pillars">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>The 3 SGI Pillars Applied to Nutrition</h3>
+          <div class="sub">A sacred nutritional framework</div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h4>Auset — Radical Devotion</h4>
+            <span class="tag">Preparation</span>
+            <span class="tag">Reverence</span>
+            <span class="tag">Stillness</span>
+            <p>
+              Auset establishes the state of reception. Before food enters the body, the body must be prepared.
+              Space, posture, breath, and attention are part of the meal.
+            </p>
+            <div class="law"><strong>SGI Law:</strong> The Temple must be prepared before the offering is received.</div>
+            <ul class="clean">
+              <li>Clean the eating area</li>
+              <li>Wash the hands</li>
+              <li>Sit down with intention</li>
+              <li>Remove distraction and agitation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>Sekert — Words of Power</h4>
+            <span class="tag">Invocation</span>
+            <span class="tag">Direction</span>
+            <span class="tag">Command</span>
+            <p>
+              Sekert directs the purpose of the meal. In SGI, speech is not decoration. Speech is instruction.
+              The body hears command. The food receives assignment.
+            </p>
+            <div class="law"><strong>SGI Law:</strong> What is spoken helps determine what is built.</div>
+            <ul class="clean">
+              <li>Speak purpose before the first bite</li>
+              <li>Use words of restoration, strength, balance, and clarity</li>
+              <li>Reject careless or chaotic speech during ritual eating</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>Tehuti — Infinite Wisdom</h4>
+            <span class="tag">Selection</span>
+            <span class="tag">Discernment</span>
+            <span class="tag">Truth</span>
+            <p>
+              Tehuti governs the choice of substance. Wisdom asks whether a food builds structure, burdens the
+              Temple, or moves the body away from its highest expression.
+            </p>
+            <div class="law"><strong>SGI Law:</strong> Only that which aligns with truth should enter the Temple.</div>
+            <ul class="clean">
+              <li>Prefer whole and living foods</li>
+              <li>Reduce overly processed intake</li>
+              <li>Choose nourishment that supports clarity and longevity</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sgi-principles">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>The 2 SGI Principles in Nutritional Practice</h3>
+          <div class="sub">Eating as lineage work</div>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <h4>Extending Royal Legacy</h4>
+            <p>
+              Every meal should contribute to durability, dignity, and longevity. To eat according to SGI is to
+              eat with future generations in mind. The question is not merely whether a food satisfies now, but
+              whether it preserves royal structure over time.
+            </p>
+            <ul class="clean">
+              <li>Choose foods that support vitality and endurance</li>
+              <li>Reduce habits that slowly degrade the body</li>
+              <li>View each meal as an investment in lineage</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>Standing on the Shoulders of Enlightened Ancestors</h4>
+            <p>
+              SGI ritual nutrition honors proven ancestral intelligence. Foods closest to earth, rhythm, season,
+              and natural preparation hold greater harmony than substances overly manipulated by disorder.
+            </p>
+            <ul class="clean">
+              <li>Favor recognizable food over artificial formulations</li>
+              <li>Honor timing, rhythm, and moderation</li>
+              <li>Eat with memory, gratitude, and continuity</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="five-possibilities">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>The 5 Possibilities Applied to Eating</h3>
+          <div class="sub">An SGI diagnostic lens</div>
+        </div>
+
+        <div class="number-grid">
+          <article class="state">
+            <div class="num">1</div>
+            <h4>Aláfíà — Perfect Balance</h4>
+            <p>
+              The meal is balanced, the mind is calm, the setting is ordered, and the body receives nourishment
+              in alignment.
+            </p>
+          </article>
+
+          <article class="state">
+            <div class="num">2</div>
+            <h4>Ejìfé — Harmonized Enjoyment</h4>
+            <p>
+              The meal is pleasing, satisfying, and still aligned. Pleasure is present without excess or disorder.
+            </p>
+          </article>
+
+          <article class="state">
+            <div class="num">3</div>
+            <h4>Ètàwà — Mixed Condition</h4>
+            <p>
+              Some of the meal supports health while other parts work against it. There is value present, but not purity.
+            </p>
+          </article>
+
+          <article class="state">
+            <div class="num">4</div>
+            <h4>Òkànràn — Warning / Imbalance</h4>
+            <p>
+              The meal is rushed, excessive, toxic, emotionally driven, or disconnected from SGI alignment.
+            </p>
+          </article>
+
+          <article class="state">
+            <div class="num">5</div>
+            <h4>Òyèkú — Reset / Emptiness</h4>
+            <p>
+              Abstention, fasting, or reduction is used to restore order, reset appetite, and return the Temple to discipline.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ritual-sequence">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>The SGI Ritual Sequence</h3>
+          <div class="sub">A practical flow for daily use</div>
+        </div>
+
+        <div class="ritual-flow">
+          <article class="flow">
+            <div class="step">Phase 1</div>
+            <h4>Prepare</h4>
+            <ul class="clean">
+              <li>Clean the space</li>
+              <li>Wash the hands</li>
+              <li>Sit and breathe</li>
+              <li>Enter stillness</li>
+            </ul>
+          </article>
+
+          <article class="flow">
+            <div class="step">Phase 2</div>
+            <h4>Invoke</h4>
+            <ul class="clean">
+              <li>Speak words of power</li>
+              <li>Declare the purpose of the meal</li>
+              <li>Call in balance, strength, and clarity</li>
+            </ul>
+          </article>
+
+          <article class="flow">
+            <div class="step">Phase 3</div>
+            <h4>Consume with Wisdom</h4>
+            <ul class="clean">
+              <li>Eat slowly</li>
+              <li>Chew with awareness</li>
+              <li>Observe quantity and quality</li>
+              <li>Remain present</li>
+            </ul>
+          </article>
+
+          <article class="flow">
+            <div class="step">Phase 4</div>
+            <h4>Integrate</h4>
+            <ul class="clean">
+              <li>Pause after eating</li>
+              <li>Give thanks</li>
+              <li>Notice body response</li>
+              <li>Close in order, not haste</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="daily-checklist">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>Daily Ritual Checklist</h3>
+          <div class="sub">Interactive SGI practice tracker</div>
+        </div>
+
+        <div class="check-wrap">
+          <div class="card">
+            <div class="checklist" id="checklist">
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I prepared the eating space.</strong>
+                  <span>The area was clean, ordered, and fit for Temple work.</span>
+                </div>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I entered stillness before the meal.</strong>
+                  <span>I paused, sat, and brought my body out of haste.</span>
+                </div>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I spoke words of power.</strong>
+                  <span>I directed the food toward strength, clarity, balance, or restoration.</span>
+                </div>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I selected food with Tehuti.</strong>
+                  <span>I chose substance based on wisdom rather than impulse alone.</span>
+                </div>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I ate in awareness.</strong>
+                  <span>I slowed down, chewed well, and remained present.</span>
+                </div>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I avoided major distraction.</strong>
+                  <span>I did not let chaos dominate the meal.</span>
+                </div>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I closed the ritual properly.</strong>
+                  <span>I paused after the meal, gave thanks, and noticed how the Temple responded.</span>
+                </div>
+              </label>
+
+              <label class="check-item">
+                <input type="checkbox" class="ritual-check" />
+                <div>
+                  <strong>I ate in a way that extends Royal Legacy.</strong>
+                  <span>The meal contributed more to life than to decline.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <aside class="card progress-panel">
+            <h4>Ritual Progress</h4>
+            <p class="small">
+              Track completion for this module. Progress is saved in your browser for this page.
+            </p>
+
+            <div class="progress-bar" aria-hidden="true">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="progress-stats" id="progressText">0 of 8 complete</div>
+
+            <div class="divider"></div>
+
+            <h5>Suggested SGI Meal Invocation</h5>
+            <p>
+              “May this offering strengthen the Temple, clarify the mind, and extend Royal Legacy in truth.”
+            </p>
+
+            <h5>Suggested Reflection</h5>
+            <p>
+              “Was this meal Aláfíà, Ejìfé, Ètàwà, Òkànràn, or Òyèkú?”
+            </p>
+
+            <div class="cta-row">
+              <button class="btn btn-primary" id="resetBtn" type="button">Reset Checklist</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="doctrine">
+          <h3>SGI Nutritional Formula</h3>
+          <p>
+            Proper nutrition is not merely chemistry. Within SGI, nutrition becomes complete when substance,
+            consciousness, and alignment operate together.
+          </p>
+          <div class="formula">Nutrition = Substance × Consciousness × Alignment</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="footer-card">
+          <h4>Teaching Use</h4>
+          <p>
+            This module may be used as an SGI study page, Iyawo reflection page, pre-discipline ritual page,
+            or as part of a larger Temple Is the Body curriculum.
+          </p>
+          <p class="muted-center">
+            Extending Royal Legacy • Standing on the shoulders of enlightened ancestors
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap muted-center">
+      <p>SwamiG Institute — Ritual Nutrition Module</p>
+      <p>Static single-file page for GitHub Pages / Cloudflare Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const STORAGE_KEY = "sgi_ritual_nutrition_checks_v1";
+      const checks = Array.from(document.querySelectorAll(".ritual-check"));
+      const progressFill = document.getElementById("progressFill");
+      const progressText = document.getElementById("progressText");
+      const resetBtn = document.getElementById("resetBtn");
+
+      function loadState(){
+        try{
+          const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+          checks.forEach((cb, i) => cb.checked = !!saved[i]);
+        }catch(e){}
+        updateProgress();
+      }
+
+      function saveState(){
+        const state = checks.map(cb => cb.checked);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        updateProgress();
+      }
+
+      function updateProgress(){
+        const total = checks.length;
+        const complete = checks.filter(cb => cb.checked).length;
+        const pct = total ? Math.round((complete / total) * 100) : 0;
+        progressFill.style.width = pct + "%";
+        progressText.textContent = complete + " of " + total + " complete";
+      }
+
+      checks.forEach(cb => cb.addEventListener("change", saveState));
+
+      resetBtn.addEventListener("click", function(){
+        checks.forEach(cb => cb.checked = false);
+        saveState();
+      });
+
+      loadState();
+    })();
+  </script>
+</body>
+</html>
