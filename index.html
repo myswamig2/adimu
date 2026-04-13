@@ -3,32 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SGI Ritual Nutrition | Feeding the Temple Through Conscious Alignment</title>
-  <meta name="description" content="SwamiG Institute module on ritual nutrition based on SGI Principles: Auset, Sekert, Tehuti, the 2 SGI Principles, and the 5 Possibilities." />
+  <title>Adimu and You | IoWLH Iyawo Lesson</title>
+  <meta name="description" content="Institute of Whole Life Healing Iyawo lesson: Adimu and You, based on the 3 pillars Know Thyself, Cleanse and Purify, and Living in Alignment With Absolute Truth." />
   <meta name="theme-color" content="#0b0b12" />
   <style>
     :root{
       --bg:#07070b;
       --bg2:#10101a;
       --panel:#12121d;
-      --panel2:#171726;
       --text:#f5f1df;
       --muted:#cfc7a7;
       --gold:#d4af37;
       --gold2:#f2d675;
       --purple:#6d3df5;
-      --purple2:#9c7bff;
       --line:rgba(212,175,55,.22);
       --shadow:0 10px 30px rgba(0,0,0,.45);
       --radius:22px;
-      --max:1180px;
+      --max:1120px;
     }
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: Georgia, "Times New Roman", serif;
+      font-family:Georgia, "Times New Roman", serif;
       color:var(--text);
       background:
         radial-gradient(circle at top right, rgba(109,61,245,.20), transparent 26%),
@@ -38,7 +36,6 @@
     }
 
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
     .wrap{width:min(var(--max), calc(100% - 28px)); margin:0 auto}
 
     .topbar{
@@ -74,10 +71,6 @@
       box-shadow:0 0 0 1px rgba(212,175,55,.18), 0 0 22px rgba(109,61,245,.22);
     }
 
-    .brand-text{
-      min-width:0;
-    }
-
     .eyebrow{
       color:var(--gold2);
       letter-spacing:.16em;
@@ -96,8 +89,8 @@
     .pills{
       display:flex;
       flex-wrap:wrap;
-      justify-content:flex-end;
       gap:8px;
+      justify-content:flex-end;
     }
 
     .pill{
@@ -112,13 +105,11 @@
       white-space:nowrap;
     }
 
-    .pill:hover{
-      transform:translateY(-2px);
-      box-shadow:0 0 0 1px rgba(255,255,255,.02) inset, 0 10px 22px rgba(0,0,0,.32), 0 0 18px rgba(212,175,55,.16);
-    }
+    .pill:hover,
+    .btn:hover{transform:translateY(-2px)}
 
     .hero{
-      padding:52px 0 26px;
+      padding:50px 0 24px;
     }
 
     .hero-card{
@@ -146,14 +137,14 @@
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.5fr .9fr;
+      grid-template-columns:1.4fr .9fr;
       gap:24px;
       align-items:center;
     }
 
     .hero h2{
       margin:0 0 10px;
-      font-size:clamp(2rem, 4vw, 3.6rem);
+      font-size:clamp(2rem, 4vw, 3.4rem);
       line-height:1.05;
       color:#fff6d7;
     }
@@ -220,19 +211,19 @@
       font-weight:700;
       border:1px solid rgba(212,175,55,.24);
       transition:.2s ease;
+      background:none;
+      color:#fff7d8;
+      cursor:pointer;
     }
 
     .btn-primary{
       background:linear-gradient(180deg, rgba(212,175,55,.18), rgba(109,61,245,.16));
-      color:#fff7d8;
     }
 
     .btn-secondary{
       background:rgba(255,255,255,.03);
       color:#e9dfbc;
     }
-
-    .btn:hover{transform:translateY(-2px)}
 
     .section{
       padding:20px 0;
@@ -287,7 +278,6 @@
       margin:0 0 8px;
       color:#f0d56d;
       font-size:1rem;
-      letter-spacing:.02em;
     }
 
     .card p{
@@ -321,54 +311,13 @@
       color:#fff3cc;
     }
 
-    .number-grid{
-      display:grid;
-      grid-template-columns:repeat(5, 1fr);
-      gap:16px;
-    }
-
-    .state{
-      min-height:100%;
-      padding:18px;
-      border-radius:20px;
-      background:linear-gradient(180deg, rgba(109,61,245,.12), rgba(255,255,255,.02));
-      border:1px solid rgba(212,175,55,.16);
-      box-shadow:var(--shadow);
-    }
-
-    .state .num{
-      width:38px;
-      height:38px;
-      display:grid;
-      place-items:center;
-      border-radius:50%;
-      border:1px solid rgba(212,175,55,.26);
-      color:#fff2c5;
-      margin-bottom:12px;
-      background:rgba(0,0,0,.18);
-      font-weight:700;
-    }
-
-    .state h4{
-      margin:0 0 8px;
-      color:#ffe69b;
-      font-size:1rem;
-    }
-
-    .state p{
-      margin:0;
-      color:#ddd3ae;
-      font-size:.95rem;
-    }
-
-    .ritual-flow{
+    .lesson-flow{
       display:grid;
       grid-template-columns:repeat(4, 1fr);
       gap:16px;
     }
 
     .flow{
-      position:relative;
       padding:20px;
       border-radius:20px;
       background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.012));
@@ -392,7 +341,7 @@
 
     .check-wrap{
       display:grid;
-      grid-template-columns:1.15fr .85fr;
+      grid-template-columns:1.1fr .9fr;
       gap:18px;
       align-items:start;
     }
@@ -505,10 +454,6 @@
       box-shadow:var(--shadow);
     }
 
-    .footer-card p{
-      margin:0 0 8px;
-    }
-
     .muted-center{
       text-align:center;
       color:#cdbf95;
@@ -525,8 +470,7 @@
       .grid-3,
       .grid-2,
       .check-wrap,
-      .ritual-flow{grid-template-columns:1fr}
-      .number-grid{grid-template-columns:repeat(2, 1fr)}
+      .lesson-flow{grid-template-columns:1fr}
       .progress-panel{position:static}
     }
 
@@ -535,7 +479,6 @@
       .pills{justify-content:flex-start}
       .hero{padding-top:28px}
       .hero-card{padding:24px 16px}
-      .number-grid{grid-template-columns:1fr}
       .brand h1{font-size:.95rem}
       .pill{font-size:.78rem; padding:7px 10px}
       .section-title{flex-direction:column; align-items:flex-start}
@@ -546,21 +489,19 @@
 
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="https://swamiginstitute.com" target="_blank" rel="noopener">
-        <img src="SwamiG.gif" alt="SwamiG Institute logo" />
-        <div class="brand-text">
-          <div class="eyebrow">SwamiG Institute</div>
-          <h1>SGI Ritual Nutrition Module</h1>
+      <a class="brand" href="#" aria-label="Institute of Whole Life Healing home">
+        <img src="SwamiG.gif" alt="Institute of Whole Life Healing logo" />
+        <div>
+          <div class="eyebrow">Institute of Whole Life Healing</div>
+          <h1>Iyawo Lesson | Adimu and You</h1>
         </div>
       </a>
 
-      <nav class="pills" aria-label="SGI portals">
-        <a class="pill" href="https://4cowrieshell.com/index0" target="_blank" rel="noopener">4-Cowrie</a>
-        <a class="pill" href="https://16cowrie.com" target="_blank" rel="noopener">16-Cowrie</a>
-        <a class="pill" href="https://myopele.com" target="_blank" rel="noopener">Opele</a>
-        <a class="pill" href="https://iamiyawo.com" target="_blank" rel="noopener">Iyawo Track</a>
-        <a class="pill" href="https://iamaborisha.com" target="_blank" rel="noopener">Obi Orisha</a>
-        <a class="pill" href="https://swamiginstitute.com" target="_blank" rel="noopener">SGI Home</a>
+      <nav class="pills" aria-label="Lesson sections">
+        <a class="pill" href="#meaning">Meaning</a>
+        <a class="pill" href="#pillars">3 Pillars</a>
+        <a class="pill" href="#sequence">Lesson Flow</a>
+        <a class="pill" href="#checklist">Checklist</a>
       </nav>
     </div>
   </header>
@@ -571,35 +512,40 @@
         <div class="hero-card">
           <div class="hero-grid">
             <div>
-              <div class="eyebrow">Feeding the Temple Through Conscious Alignment</div>
-              <h2>Eating as Ritual <span>Based on SGI Principles</span></h2>
+              <div class="eyebrow">Single Iyawo Lesson</div>
+              <h2>Adimu <span>and You</span></h2>
               <p>
-                This module formalizes eating as a sacred discipline. Within SGI, the body is treated as Temple,
-                food as offering, and consciousness as priest. Proper nutrition is therefore not only about what is consumed,
-                but how it is prepared, invoked, received, and integrated.
+                This lesson introduces the Iyawo to <strong>Adimu</strong> as more than an external offering.
+                It is an act of relationship, discipline, orientation, and self-examination. What is placed before
+                the sacred powers should reflect what is being cultivated within the self.
               </p>
+              <p>
+                In this lesson, the Iyawo learns that Adimu is not only something given. It is also something that
+                teaches. It reveals intention, cleanliness, order, truthfulness, and the quality of one’s internal state.
+              </p>
+
               <div class="quote">
-                “The Body is the Temple. Food is the Offering. The Mind is the Priest.”
+                “The offering placed outside should not contradict the condition carried inside.”
               </div>
 
               <div class="cta-row">
-                <a class="btn btn-primary" href="#daily-checklist">Start Ritual Checklist</a>
-                <a class="btn btn-secondary" href="#sgi-pillars">Study the SGI Pillars</a>
+                <a class="btn btn-primary" href="#checklist">Begin Lesson Practice</a>
+                <a class="btn btn-secondary" href="#pillars">View the 3 Pillars</a>
               </div>
             </div>
 
             <div class="hero-side">
               <div class="mini-card">
+                <h3>Lesson Focus</h3>
+                <p>What Adimu teaches the Iyawo about self, discipline, and spiritual relationship.</p>
+              </div>
+              <div class="mini-card">
                 <h3>3 Pillars</h3>
-                <p>Auset • Sekert • Tehuti</p>
+                <p>Know Thyself • Cleanse and Purify • Living in Alignment With Absolute Truth</p>
               </div>
               <div class="mini-card">
                 <h3>2 Principles</h3>
-                <p>Extending Royal Legacy • Standing on the Shoulders of Enlightened Ancestors</p>
-              </div>
-              <div class="mini-card">
-                <h3>5 Possibilities</h3>
-                <p>Aláfíà • Ejìfé • Ètàwà • Òkànràn • Òyèkú</p>
+                <p>We Seek No Followers • Many Paths, 1 Truth</p>
               </div>
             </div>
           </div>
@@ -607,311 +553,269 @@
       </div>
     </section>
 
-    <section class="section" id="sgi-pillars">
+    <section class="section" id="meaning">
       <div class="wrap">
         <div class="section-title">
-          <h3>The 3 SGI Pillars Applied to Nutrition</h3>
-          <div class="sub">A sacred nutritional framework</div>
-        </div>
-
-        <div class="grid-3">
-          <article class="card">
-            <h4>Auset — Radical Devotion</h4>
-            <span class="tag">Preparation</span>
-            <span class="tag">Reverence</span>
-            <span class="tag">Stillness</span>
-            <p>
-              Auset establishes the state of reception. Before food enters the body, the body must be prepared.
-              Space, posture, breath, and attention are part of the meal.
-            </p>
-            <div class="law"><strong>SGI Law:</strong> The Temple must be prepared before the offering is received.</div>
-            <ul class="clean">
-              <li>Clean the eating area</li>
-              <li>Wash the hands</li>
-              <li>Sit down with intention</li>
-              <li>Remove distraction and agitation</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h4>Sekert — Words of Power</h4>
-            <span class="tag">Invocation</span>
-            <span class="tag">Direction</span>
-            <span class="tag">Command</span>
-            <p>
-              Sekert directs the purpose of the meal. In SGI, speech is not decoration. Speech is instruction.
-              The body hears command. The food receives assignment.
-            </p>
-            <div class="law"><strong>SGI Law:</strong> What is spoken helps determine what is built.</div>
-            <ul class="clean">
-              <li>Speak purpose before the first bite</li>
-              <li>Use words of restoration, strength, balance, and clarity</li>
-              <li>Reject careless or chaotic speech during ritual eating</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h4>Tehuti — Infinite Wisdom</h4>
-            <span class="tag">Selection</span>
-            <span class="tag">Discernment</span>
-            <span class="tag">Truth</span>
-            <p>
-              Tehuti governs the choice of substance. Wisdom asks whether a food builds structure, burdens the
-              Temple, or moves the body away from its highest expression.
-            </p>
-            <div class="law"><strong>SGI Law:</strong> Only that which aligns with truth should enter the Temple.</div>
-            <ul class="clean">
-              <li>Prefer whole and living foods</li>
-              <li>Reduce overly processed intake</li>
-              <li>Choose nourishment that supports clarity and longevity</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="sgi-principles">
-      <div class="wrap">
-        <div class="section-title">
-          <h3>The 2 SGI Principles in Nutritional Practice</h3>
-          <div class="sub">Eating as lineage work</div>
+          <h3>What Is “Adimu and You”?</h3>
+          <div class="sub">An Iyawo lesson in offering and self-relationship</div>
         </div>
 
         <div class="grid-2">
           <article class="card">
-            <h4>Extending Royal Legacy</h4>
+            <h4>Adimu as Offering</h4>
             <p>
-              Every meal should contribute to durability, dignity, and longevity. To eat according to SGI is to
-              eat with future generations in mind. The question is not merely whether a food satisfies now, but
-              whether it preserves royal structure over time.
+              Adimu is a sacred offering set before divine power, ancestral force, or spiritual principle.
+              It may include food, drink, fruit, grains, or other appropriate items according to context,
+              instruction, and tradition.
+            </p>
+            <div class="law"><strong>Lesson Insight:</strong> An offering is not random. It must be intentional, respectful, and rightly placed.</div>
+          </article>
+
+          <article class="card">
+            <h4>Adimu as Mirror</h4>
+            <p>
+              For the Iyawo, Adimu also becomes a mirror. How you prepare it, how you approach it, and how you
+              carry yourself around it reveal something about your inner condition. Disorder in the process often
+              reflects disorder in the self.
+            </p>
+            <div class="law"><strong>Lesson Insight:</strong> The offering is outward, but the lesson is inward.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pillars">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>The 3 IoWLH Pillars Applied to Adimu</h3>
+          <div class="sub">How the Iyawo is shaped through the practice</div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h4>1) Know Thyself</h4>
+            <span class="tag">Awareness</span>
+            <span class="tag">Intention</span>
+            <span class="tag">Reflection</span>
+            <p>
+              Before preparing Adimu, the Iyawo must ask: What spirit am I bringing to this work? Am I rushed,
+              careless, distracted, resentful, thankful, sincere, or disciplined? Adimu begins with self-observation.
             </p>
             <ul class="clean">
-              <li>Choose foods that support vitality and endurance</li>
-              <li>Reduce habits that slowly degrade the body</li>
-              <li>View each meal as an investment in lineage</li>
+              <li>Check your internal state before beginning</li>
+              <li>Know whether you are acting from duty or devotion</li>
+              <li>Notice where your mind is during preparation</li>
             </ul>
           </article>
 
           <article class="card">
-            <h4>Standing on the Shoulders of Enlightened Ancestors</h4>
+            <h4>2) Cleanse and Purify</h4>
+            <span class="tag">Cleanliness</span>
+            <span class="tag">Order</span>
+            <span class="tag">Preparation</span>
             <p>
-              SGI ritual nutrition honors proven ancestral intelligence. Foods closest to earth, rhythm, season,
-              and natural preparation hold greater harmony than substances overly manipulated by disorder.
+              Adimu should not be approached casually. The body, the hands, the space, and the materials should reflect
+              respect. Cleanliness is not merely physical; it also includes intention, speech, and manner.
             </p>
             <ul class="clean">
-              <li>Favor recognizable food over artificial formulations</li>
-              <li>Honor timing, rhythm, and moderation</li>
-              <li>Eat with memory, gratitude, and continuity</li>
+              <li>Clean the space before arranging the offering</li>
+              <li>Use proper care in handling the items</li>
+              <li>Remove unnecessary confusion and clutter</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>3) Living in Alignment With Absolute Truth</h4>
+            <span class="tag">Truth</span>
+            <span class="tag">Integrity</span>
+            <span class="tag">Right Relationship</span>
+            <p>
+              Adimu teaches honesty. You cannot offer truthfully while living carelessly. The Iyawo is asked to bring
+              actions into harmony with what is being declared spiritually. The offering should support truth, not substitute for it.
+            </p>
+            <ul class="clean">
+              <li>Let the offering match a truthful life effort</li>
+              <li>Do not use ritual to cover indiscipline</li>
+              <li>Approach the work with sincerity and alignment</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="five-possibilities">
+    <section class="section" id="principles">
       <div class="wrap">
         <div class="section-title">
-          <h3>The 5 Possibilities Applied to Eating</h3>
-          <div class="sub">An SGI diagnostic lens</div>
+          <h3>The 2 IoWLH Principles Within This Lesson</h3>
+          <div class="sub">How the Iyawo understands the work</div>
         </div>
 
-        <div class="number-grid">
-          <article class="state">
-            <div class="num">1</div>
-            <h4>Aláfíà — Perfect Balance</h4>
+        <div class="grid-2">
+          <article class="card">
+            <h4>We Seek No Followers</h4>
             <p>
-              The meal is balanced, the mind is calm, the setting is ordered, and the body receives nourishment
-              in alignment.
+              The Iyawo is not being trained to imitate mechanically. This lesson is meant to cultivate understanding,
+              discipline, and self-responsibility. Adimu is not about performance for approval. It is about right relationship.
             </p>
           </article>
 
-          <article class="state">
-            <div class="num">2</div>
-            <h4>Ejìfé — Harmonized Enjoyment</h4>
+          <article class="card">
+            <h4>Many Paths, 1 Truth</h4>
             <p>
-              The meal is pleasing, satisfying, and still aligned. Pleasure is present without excess or disorder.
-            </p>
-          </article>
-
-          <article class="state">
-            <div class="num">3</div>
-            <h4>Ètàwà — Mixed Condition</h4>
-            <p>
-              Some of the meal supports health while other parts work against it. There is value present, but not purity.
-            </p>
-          </article>
-
-          <article class="state">
-            <div class="num">4</div>
-            <h4>Òkànràn — Warning / Imbalance</h4>
-            <p>
-              The meal is rushed, excessive, toxic, emotionally driven, or disconnected from SGI alignment.
-            </p>
-          </article>
-
-          <article class="state">
-            <div class="num">5</div>
-            <h4>Òyèkú — Reset / Emptiness</h4>
-            <p>
-              Abstention, fasting, or reduction is used to restore order, reset appetite, and return the Temple to discipline.
+              Different houses and traditions may arrange, name, or emphasize offerings differently. Yet truth remains:
+              the offering should reflect reverence, order, sincerity, and alignment. Forms vary. Truth does not.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="ritual-sequence">
+    <section class="section" id="sequence">
       <div class="wrap">
         <div class="section-title">
-          <h3>The SGI Ritual Sequence</h3>
-          <div class="sub">A practical flow for daily use</div>
+          <h3>Iyawo Lesson Flow</h3>
+          <div class="sub">A simple sequence for “Adimu and You”</div>
         </div>
 
-        <div class="ritual-flow">
+        <div class="lesson-flow">
           <article class="flow">
-            <div class="step">Phase 1</div>
+            <div class="step">Step 1</div>
+            <h4>Pause</h4>
+            <ul class="clean">
+              <li>Become still</li>
+              <li>Check your mindset</li>
+              <li>Remember who and what the work is for</li>
+            </ul>
+          </article>
+
+          <article class="flow">
+            <div class="step">Step 2</div>
             <h4>Prepare</h4>
             <ul class="clean">
               <li>Clean the space</li>
-              <li>Wash the hands</li>
-              <li>Sit and breathe</li>
-              <li>Enter stillness</li>
+              <li>Gather the materials properly</li>
+              <li>Handle the items with respect</li>
             </ul>
           </article>
 
           <article class="flow">
-            <div class="step">Phase 2</div>
-            <h4>Invoke</h4>
+            <div class="step">Step 3</div>
+            <h4>Offer</h4>
             <ul class="clean">
-              <li>Speak words of power</li>
-              <li>Declare the purpose of the meal</li>
-              <li>Call in balance, strength, and clarity</li>
+              <li>Place the Adimu deliberately</li>
+              <li>Speak clearly and truthfully</li>
+              <li>Remain present, not mechanical</li>
             </ul>
           </article>
 
           <article class="flow">
-            <div class="step">Phase 3</div>
-            <h4>Consume with Wisdom</h4>
+            <div class="step">Step 4</div>
+            <h4>Reflect</h4>
             <ul class="clean">
-              <li>Eat slowly</li>
-              <li>Chew with awareness</li>
-              <li>Observe quantity and quality</li>
-              <li>Remain present</li>
-            </ul>
-          </article>
-
-          <article class="flow">
-            <div class="step">Phase 4</div>
-            <h4>Integrate</h4>
-            <ul class="clean">
-              <li>Pause after eating</li>
-              <li>Give thanks</li>
-              <li>Notice body response</li>
-              <li>Close in order, not haste</li>
+              <li>What did the process show about you?</li>
+              <li>Were you ordered, clean, and sincere?</li>
+              <li>What needs strengthening?</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="daily-checklist">
+    <section class="section">
+      <div class="wrap">
+        <div class="doctrine">
+          <h3>Core Teaching</h3>
+          <p>
+            The Iyawo must learn that Adimu is not just about giving something. It is about becoming someone:
+            more orderly, more conscious, more truthful, and more aligned in sacred relationship.
+          </p>
+          <div class="formula">Adimu = Offering + Discipline + Self-Revelation</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="checklist">
       <div class="wrap">
         <div class="section-title">
-          <h3>Daily Ritual Checklist</h3>
-          <div class="sub">Interactive SGI practice tracker</div>
+          <h3>Iyawo Reflection Checklist</h3>
+          <div class="sub">Interactive practice for this single lesson</div>
         </div>
 
         <div class="check-wrap">
           <div class="card">
-            <div class="checklist" id="checklist">
+            <div class="checklist">
               <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
+                <input type="checkbox" class="lesson-check" />
                 <div>
-                  <strong>I prepared the eating space.</strong>
-                  <span>The area was clean, ordered, and fit for Temple work.</span>
+                  <strong>I paused and checked myself before beginning.</strong>
+                  <span>I noticed my attitude, focus, and internal condition.</span>
                 </div>
               </label>
 
               <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
+                <input type="checkbox" class="lesson-check" />
                 <div>
-                  <strong>I entered stillness before the meal.</strong>
-                  <span>I paused, sat, and brought my body out of haste.</span>
+                  <strong>I prepared the space with cleanliness and order.</strong>
+                  <span>I treated the setting as suitable for sacred work.</span>
                 </div>
               </label>
 
               <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
+                <input type="checkbox" class="lesson-check" />
                 <div>
-                  <strong>I spoke words of power.</strong>
-                  <span>I directed the food toward strength, clarity, balance, or restoration.</span>
+                  <strong>I handled the Adimu with care and respect.</strong>
+                  <span>I did not approach the offering casually or mechanically.</span>
                 </div>
               </label>
 
               <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
+                <input type="checkbox" class="lesson-check" />
                 <div>
-                  <strong>I selected food with Tehuti.</strong>
-                  <span>I chose substance based on wisdom rather than impulse alone.</span>
+                  <strong>I understood that the offering reflects me.</strong>
+                  <span>I recognized that the process reveals my discipline and alignment.</span>
                 </div>
               </label>
 
               <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
+                <input type="checkbox" class="lesson-check" />
                 <div>
-                  <strong>I ate in awareness.</strong>
-                  <span>I slowed down, chewed well, and remained present.</span>
+                  <strong>I reflected honestly after the act.</strong>
+                  <span>I asked what the process showed me about myself.</span>
                 </div>
               </label>
 
               <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
+                <input type="checkbox" class="lesson-check" />
                 <div>
-                  <strong>I avoided major distraction.</strong>
-                  <span>I did not let chaos dominate the meal.</span>
-                </div>
-              </label>
-
-              <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
-                <div>
-                  <strong>I closed the ritual properly.</strong>
-                  <span>I paused after the meal, gave thanks, and noticed how the Temple responded.</span>
-                </div>
-              </label>
-
-              <label class="check-item">
-                <input type="checkbox" class="ritual-check" />
-                <div>
-                  <strong>I ate in a way that extends Royal Legacy.</strong>
-                  <span>The meal contributed more to life than to decline.</span>
+                  <strong>I committed to greater truth in future offerings.</strong>
+                  <span>I identified at least one way to improve my practice.</span>
                 </div>
               </label>
             </div>
           </div>
 
           <aside class="card progress-panel">
-            <h4>Ritual Progress</h4>
+            <h4>Lesson Progress</h4>
             <p class="small">
-              Track completion for this module. Progress is saved in your browser for this page.
+              Track your completion for this Iyawo lesson. Progress is saved in your browser.
             </p>
 
             <div class="progress-bar" aria-hidden="true">
               <div class="progress-fill" id="progressFill"></div>
             </div>
 
-            <div class="progress-stats" id="progressText">0 of 8 complete</div>
+            <div class="progress-stats" id="progressText">0 of 6 complete</div>
 
             <div class="divider"></div>
 
-            <h5>Suggested SGI Meal Invocation</h5>
+            <h5>Suggested Reflection Prompt</h5>
             <p>
-              “May this offering strengthen the Temple, clarify the mind, and extend Royal Legacy in truth.”
+              “What did my preparation of Adimu reveal about my inner state?”
             </p>
 
-            <h5>Suggested Reflection</h5>
+            <h5>Suggested Closing Thought</h5>
             <p>
-              “Was this meal Aláfíà, Ejìfé, Ètàwà, Òkànràn, or Òyèkú?”
+              “May my offering and my character come into greater alignment.”
             </p>
 
             <div class="cta-row">
@@ -924,28 +828,13 @@
 
     <section class="section">
       <div class="wrap">
-        <div class="doctrine">
-          <h3>SGI Nutritional Formula</h3>
-          <p>
-            Proper nutrition is not merely chemistry. Within SGI, nutrition becomes complete when substance,
-            consciousness, and alignment operate together.
-          </p>
-          <div class="formula">Nutrition = Substance × Consciousness × Alignment</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
         <div class="footer-card">
           <h4>Teaching Use</h4>
           <p>
-            This module may be used as an SGI study page, Iyawo reflection page, pre-discipline ritual page,
-            or as part of a larger Temple Is the Body curriculum.
+            This page is designed as a single Iyawo lesson for guided study, reflection, orientation, or discussion.
+            It may also serve as a preparatory module before more detailed instruction on offerings and sacred discipline.
           </p>
-          <p class="muted-center">
-            Extending Royal Legacy • Standing on the shoulders of enlightened ancestors
-          </p>
+          <p class="muted-center">We Seek No Followers • Many Paths, 1 Truth</p>
         </div>
       </div>
     </section>
@@ -953,15 +842,15 @@
 
   <footer class="footer">
     <div class="wrap muted-center">
-      <p>SwamiG Institute — Ritual Nutrition Module</p>
-      <p>Static single-file page for GitHub Pages / Cloudflare Pages</p>
+      <p>Institute of Whole Life Healing — Iyawo Lesson</p>
+      <p>Adimu and You</p>
     </div>
   </footer>
 
   <script>
     (function(){
-      const STORAGE_KEY = "sgi_ritual_nutrition_checks_v1";
-      const checks = Array.from(document.querySelectorAll(".ritual-check"));
+      const STORAGE_KEY = "iowlh_adimu_and_you_lesson_v1";
+      const checks = Array.from(document.querySelectorAll(".lesson-check"));
       const progressFill = document.getElementById("progressFill");
       const progressText = document.getElementById("progressText");
       const resetBtn = document.getElementById("resetBtn");
@@ -970,7 +859,7 @@
         try{
           const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
           checks.forEach((cb, i) => cb.checked = !!saved[i]);
-        }catch(e){}
+        } catch(e) {}
         updateProgress();
       }
 
